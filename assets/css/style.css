@@ -1,0 +1,20 @@
+
+
+
+#player1 {
+  position: relative;
+  border: 1px;
+  background: lightblue;
+  width: 100px;
+  height: 100px;
+
+}
+
+#player2 {
+  position: relative;
+  border: 1px;
+  background: lightyellow;
+  width: 100px;
+  height: 100px;
+
+}
