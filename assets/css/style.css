@@ -18,6 +18,7 @@ body, html {
 
 h1 {
   padding: 40px 0;
+  text-shadow: 1px 1px 2px white, 0 0 25px red, 0 0 5px red;
 }
 
 .player1 {
