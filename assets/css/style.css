@@ -1,7 +1,9 @@
 
+.container {
+  width: 900px;
+}
 
-
-#player1 {
+.player1 {
   position: relative;
   border: 1px;
   background: lightblue;
@@ -10,7 +12,7 @@
 
 }
 
-#player2 {
+.player2 {
   position: relative;
   border: 1px;
   background: lightyellow;
