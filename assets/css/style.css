@@ -3,20 +3,32 @@
   width: 900px;
 }
 
+h1 {
+  text-align: center;
+}
+
 .player1 {
   position: relative;
   border: 1px;
-  background: lightblue;
   width: 100px;
   height: 100px;
+  background-image: url('https://media.giphy.com/media/xThtama8b8ZGtnMeuQ/giphy.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
 
 }
 
 .player2 {
   position: relative;
   border: 1px;
-  background: lightyellow;
   width: 100px;
   height: 100px;
+  background-image: url('https://media.giphy.com/media/xThtavur3TE6l55APe/giphy.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.btn-primary {
+  align-items: center;
 
 }

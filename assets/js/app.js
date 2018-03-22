@@ -19,24 +19,36 @@ $(document).on('keydown', moveRight);
 
 function moveRight(event) {
   if (event.keyCode === 90) {
-    if (playerOneMoves < 15) {
-      $('.player1').animate({left: '+=50px'}, 100);
+    if (playerOneMoves < 10) {
+      $('.player1').animate({left: '+=75px'}, 50);
       playerOneMoves++;
     } else {
-      alert('Player one wins!')
+      alert('Doggo wins!');
+      reset();
 
     }
 
   } else if (event.keyCode === 191) {
-      if (playerTwoMoves < 15) {
-        $('.player2').animate({left: '+=50px'}, 100);
+      if (playerTwoMoves < 10) {
+        $('.player2').animate({left: '+=75px'}, 50);
         playerTwoMoves++;
       } else {
-        alert('Player two Wins!')
-
+        alert('Monkey Wins!');
+        reset();
       }
-  }
+    }
 }
+
+$('.btn-primary').on('click', reset);
+
+  function reset(event) {
+    $('.player1').animate({'right':'',
+  'left': '0px'});
+    $('.player2').animate({'right':'',
+  'left': '0px'});
+  playerOneMoves = 0;
+  playerTwoMoves = 0;
+  }
 
 // keep count of player 1 press and player two press
 // increment count for each keypress of player 1 and 2
