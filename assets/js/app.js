@@ -15,6 +15,8 @@ var playerTwoPiece = $('.player2');
 var playerOneMoves = 0;
 var playerTwoMoves = 0;
 
+var worldEndBg = $('.bg')
+
 $(document).on('keydown', moveRight);
 
 function moveRight(event) {
@@ -23,7 +25,8 @@ function moveRight(event) {
       $('.player1').animate({left: '+=75px'}, 50);
       playerOneMoves++;
     } else {
-      alert('Doggo wins!');
+      alert('Trump wins!');
+      $('.bg').css("background-image", "url('https://media.giphy.com/media/9jEaPxN9eZWmI/giphy.gif')");
       reset();
 
     }
@@ -33,13 +36,17 @@ function moveRight(event) {
         $('.player2').animate({left: '+=75px'}, 50);
         playerTwoMoves++;
       } else {
-        alert('Monkey Wins!');
+        $('.bg').css("background-image", "url('https://media.giphy.com/media/ai4alcM06hpYY/giphy.gif')");
+        alert('Putin Wins!');
         reset();
       }
     }
 }
 
-$('.btn-primary').on('click', reset);
+$('.btn-primary').on('click', function() {
+  $('.bg').css("background-image", "url('https://cdn.dribbble.com/users/535167/screenshots/3263021/whitehouse-01_copy.png')");
+  reset();
+});
 
   function reset(event) {
     $('.player1').animate({'right':'',
@@ -49,6 +56,7 @@ $('.btn-primary').on('click', reset);
   playerOneMoves = 0;
   playerTwoMoves = 0;
   }
+
 
 // keep count of player 1 press and player two press
 // increment count for each keypress of player 1 and 2

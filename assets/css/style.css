@@ -1,18 +1,31 @@
 
+body, html {
+  height: 100%;
+}
+
+.bg {
+  background-image: url('https://cdn.dribbble.com/users/535167/screenshots/3263021/whitehouse-01_copy.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .container {
   width: 900px;
 }
 
 h1 {
-  text-align: center;
+  padding: 40px 0;
 }
 
 .player1 {
   position: relative;
   border: 1px;
-  width: 100px;
-  height: 100px;
-  background-image: url('https://media.giphy.com/media/xThtama8b8ZGtnMeuQ/giphy.gif');
+  width: 200px;
+  height: 200px;
+  background-image: url('https://media.giphy.com/media/4QFzDdeLmo19MTm9AF/giphy.gif');
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -20,15 +33,20 @@ h1 {
 
 .player2 {
   position: relative;
+  margin: 10px 0;
   border: 1px;
-  width: 100px;
-  height: 100px;
-  background-image: url('https://media.giphy.com/media/xThtavur3TE6l55APe/giphy.gif');
+  width: 200px;
+  height: 200px;
+  background-image: url('https://media.giphy.com/media/xmkWVasKalbaM/giphy.gif');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .btn-primary {
-  align-items: center;
-
+  color: black;
+  background-color: red;
+  margin: 10px 0 50px 0;
+}
+.btn-primary:hover {
+  background-color: maroon;
 }
